@@ -13,8 +13,8 @@
             <thead>
                 <tr>
                     <th>id</th>
+                    <th>ステータス</th>
                     <th>メッセージ</th>
-                    <th>スタチュー</th>
                 </tr>
             </thead>
             <tbody>
