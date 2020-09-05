@@ -16,7 +16,11 @@ class TasksController extends Controller
     public function index()
     {
           $tasks = Task::all();
+           // メッセージ一覧をidの降順で取得
+        $tasks = Task::orderBy('id', 'desc')->paginate(25);
 
+ // メッセージ一覧を取得
+        $tasks = Task::paginate(25);
         // メッセージ一覧ビューでそれを表示
         return view('tasks.index', [
             'tasks' => $tasks,
